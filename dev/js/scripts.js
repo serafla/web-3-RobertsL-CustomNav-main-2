@@ -10,14 +10,3 @@ window.addEventListener('load', function() {
     sectionSlide();
 })
 
-// function ChangeNavOnScroll() {
-//     if (burgerClicked === false) {
-//         burgerTL.play();
-//         menuAnimation.play();
-//         burgerClicked = true;
-//     } else {
-//         burgerTL.reverse();
-//         menuAnimation.reverse();
-//         burgerClicked = false;
-//     }
-// }

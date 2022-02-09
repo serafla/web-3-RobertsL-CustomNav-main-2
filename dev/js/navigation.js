@@ -25,7 +25,7 @@ function menuSetUp(){
             gsap.set(circleButton[i],{scale: 1, backgroundColor: "transparent"})
             circleButton[i].classList.add("circle-selected")
         }
-	// force the portfolio to be selected
+	// force the introduction to be selected
 	gsap.to(textArray[0], {duration: 0.25, scrambleText: buttonText[0], ease: "none"})
 })}
 
@@ -40,24 +40,29 @@ export function buttonClicks(){
             e.preventDefault();
             // set the currentLink
 
-            console.log(i + " index value");
+            if(i !== currentLink){
+                console.log(i + " index value");
 
-            // remove old circle class
-            circleButton[currentLink].classList.remove("circle-selected");
-          
-            gsap.to(window, {scrollTo: i * innerHeight});
-
-            // animate in
-            gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
-            gsap.to(circleButton[i], {duration: 0.25, scale: 1, backgroundColor: "transparent", ease: "back.out(1.7)"});
-           
-            // animate out
-            gsap.to(textArray[currentLink], {duration: 0.25, scrambleText: "", ease: "none"});
-            gsap.to(circleButton[currentLink], {duration: 0.25, backgroundColor: "#808080", ease: "none"});
-
-            circleButton[i].classList.add("circle-selected");
-
-            currentLink = i;
+                // remove old circle class
+                circleButton[currentLink].classList.remove("circle-selected");
+              
+                gsap.to(window, {scrollTo: i * innerHeight});
+    
+                // animate in
+                gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
+                gsap.to(circleButton[i], {duration: 0.25, scale: 1, backgroundColor: "transparent", ease: "back.out(1.7)"});
+               
+                // animate out
+                gsap.to(textArray[currentLink], {duration: 0.25, scrambleText: "", ease: "none"});
+                gsap.to(circleButton[currentLink], {duration: 0.25, backgroundColor: "#808080", ease: "none"});
+    
+                circleButton[i].classList.add("circle-selected");
+    
+                currentLink = i;
+            } else {
+                 // animate in
+                 gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
+            }
           
         });
     });
@@ -76,6 +81,8 @@ export function buttonMouseEvents(){
             if(i != currentLink){
                 gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
                 gsap.to(circleButton[i], {duration: 0.25, scale:0.5, backgroundColor: "#fff", ease: "none"});
+            } else {
+                gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
             }
         });
 
@@ -88,7 +95,7 @@ export function buttonMouseEvents(){
             if(i != currentLink){
                 gsap.to(textArray[i], {duration: 0.25, scrambleText: "", ease: "none"});
                 gsap.to(circleButton[i], {duration: 0.25, scale:1, backgroundColor: "#808080", ease: "none"});
-            }
+            } 
         });
     });
 

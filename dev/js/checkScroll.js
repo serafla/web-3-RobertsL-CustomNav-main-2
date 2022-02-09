@@ -16,7 +16,7 @@ export function sectionSlide(){
                     start: "top 20%",
                     end: "bottom 80%",
                     trigger: section,
-                    markers: true,
+                    // markers: true,
                     id: "section " + i,
                     onLeave: () => {
                         // console.log("leaving section " + i);
@@ -94,7 +94,7 @@ export function sectionSlide(){
                             gsap.to(textArray[i], {duration: 0.25, scrambleText: buttonText[i], ease: "none"});
                             gsap.to(circleButton[i], {duration: 0.25, scale: 1, backgroundColor: "transparent", ease: "back.out(1.7)"});
                             circleButton[i].classList.add("circle-selected")
-                            
+
                             // set current link
                             currentLinkLocal = i;
 

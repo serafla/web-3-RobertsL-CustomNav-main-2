@@ -531,7 +531,6 @@ footer > div ul li a:visited:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5px;
 }
 #content-container section:nth-child(1) {
   background-color: red;
