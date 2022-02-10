@@ -1,30 +1,27 @@
 /* =============
-    Navigation
+    Burger Navigation
 ============= */
-#nav-container {
+
+#burger-nav-container{
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 5000;
 
-    ul {
-       
-
-        @include lg {
+    ul{
+        @include lg{
             height: 100%;
             display: flex;
             justify-content: flex-end;
         }
 
-        li {
+        li{
             margin-bottom: 20px;
-            text-align: right;
+            text-align: center;
 
-            @include lg {
+            @include lg{
                 align-items: center;
-                border-right: 2px solid $charcoal;
                 display: flex;
                 margin-bottom: 0px;
             }
@@ -32,7 +29,6 @@
             button {
                 background-color: transparent;
                  color: $white;
-                 font-family: 'Comfortaa', cursive;
                  font-size: rem-calc(30);
                  text-decoration: none;
                  transition: 0.25s;
@@ -41,7 +37,6 @@
                  border: none;
  
                  @include lg {
-                     color: $black;
                      font-size: rem-calc(20);
                  }
  
@@ -49,27 +44,6 @@
                      color: $yellow;
                  }
              }
-
-            // a:link,
-            // a:visited {
-            //     color: $white;
-            //     font-family: 'Comfortaa', cursive;
-            //     padding: 0 20px;
-            //     text-decoration: none;
-            //     transition: 0.25s;
-            //     @include lg {
-            //         color: $black;
-            //     }
-
-            //     &:hover,
-            //     &:active {
-            //         color: $yellow;
-            //     }
-            // }
-        }
-
-        li:last-child {
-            border: none;
         }
     }
 }

@@ -1,0 +1,70 @@
+/* =============
+    Main Header
+============= */
+
+header {
+    background-color: $charcoal;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5000;
+    z-index: 1000;
+
+    >div {
+        display: grid;
+        grid-template-areas: 
+        "logo burger"
+        "nav nav";
+        grid-template-columns: 20% auto;
+
+        @include lg {
+            grid-template-areas: "logo nav";
+            grid-template-columns: 20% auto;
+        }
+
+        #logo-container {
+            grid-area: logo;
+            font-size: 20px;
+            padding: 10px;
+        }
+
+        #burger-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            grid-area: burger;
+            padding: 10px;
+            position: relative;
+
+            @include lg {
+                display: none !important;
+            }
+
+            // burger svg
+            #burger{
+                position: absolute;
+                z-index: 1000;
+                height: 40px;
+                width: 40px;
+                
+            }
+        }
+
+        #burger-nav-container {
+            background-color: $charcoal;
+            grid-area: nav;
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            z-index: 500;
+
+            @include lg {
+                background-color: $charcoal;
+                position: static;
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+}
