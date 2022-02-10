@@ -9,6 +9,12 @@
     justify-content: center;
     align-items: center;
 
+    @include lg{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
     ul{
         @include lg{
             height: 100%;
@@ -21,14 +27,15 @@
             text-align: center;
 
             @include lg{
-                align-items: center;
+                align-items: space-between;
                 display: flex;
                 margin-bottom: 0px;
+                padding: 0px;
             }
 
             button {
                 background-color: transparent;
-                 color: $white;
+                 color: $black;
                  font-size: rem-calc(30);
                  text-decoration: none;
                  transition: 0.25s;
@@ -37,6 +44,7 @@
                  border: none;
  
                  @include lg {
+                     color: #000;
                      font-size: rem-calc(20);
                  }
  

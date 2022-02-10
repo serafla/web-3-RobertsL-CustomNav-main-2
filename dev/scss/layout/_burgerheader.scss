@@ -2,8 +2,8 @@
     Main Header
 ============= */
 
-header {
-    background-color: $charcoal;
+#burger-header {
+    background-color: $white;
     left: 0;
     position: fixed;
     top: 0;
@@ -16,17 +16,18 @@ header {
         grid-template-areas: 
         "logo burger"
         "nav nav";
-        grid-template-columns: 20% auto;
+        grid-template-columns: 40% auto;
 
         @include lg {
             grid-template-areas: "logo nav";
-            grid-template-columns: 20% auto;
+            grid-template-columns: 40% auto;
         }
 
         #logo-container {
             grid-area: logo;
-            font-size: 20px;
+            font-size: 30px;
             padding: 10px;
+            color: #000;
         }
 
         #burger-container {
@@ -60,7 +61,7 @@ header {
             z-index: 500;
 
             @include lg {
-                background-color: $charcoal;
+                background-color: $white;
                 position: static;
                 height: 100%;
                 width: 100%;

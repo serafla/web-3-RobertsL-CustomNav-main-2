@@ -407,7 +407,6 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 5000;
 }
 @media (min-width: 1024px) {
   #nav-container ul {
@@ -463,6 +462,13 @@ textarea {
   align-items: center;
 }
 @media (min-width: 1024px) {
+  #burger-nav-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1024px) {
   #burger-nav-container ul {
     height: 100%;
     display: flex;
@@ -475,14 +481,15 @@ textarea {
 }
 @media (min-width: 1024px) {
   #burger-nav-container ul li {
-    align-items: center;
+    align-items: space-between;
     display: flex;
     margin-bottom: 0px;
+    padding: 0px;
   }
 }
 #burger-nav-container ul li button {
   background-color: transparent;
-  color: #fff;
+  color: #000;
   font-size: 1.875rem;
   text-decoration: none;
   transition: 0.25s;
@@ -492,6 +499,7 @@ textarea {
 }
 @media (min-width: 1024px) {
   #burger-nav-container ul li button {
+    color: #000;
     font-size: 1.25rem;
   }
 }
@@ -505,7 +513,7 @@ textarea {
 header {
   position: fixed;
   left: 50px;
-  top: 40vh;
+  top: 60vh;
 }
 header nav ul li a {
   display: flex;
@@ -533,8 +541,8 @@ header nav ul li a section .circle-selected {
 /* =============
     Main Header
 ============= */
-header {
-  background-color: #222222;
+#burger-header {
+  background-color: #fff;
   left: 0;
   position: fixed;
   top: 0;
@@ -542,23 +550,24 @@ header {
   z-index: 5000;
   z-index: 1000;
 }
-header > div {
+#burger-header > div {
   display: grid;
   grid-template-areas: "logo burger" "nav nav";
-  grid-template-columns: 20% auto;
+  grid-template-columns: 40% auto;
 }
 @media (min-width: 1024px) {
-  header > div {
+  #burger-header > div {
     grid-template-areas: "logo nav";
-    grid-template-columns: 20% auto;
+    grid-template-columns: 40% auto;
   }
 }
-header > div #logo-container {
+#burger-header > div #logo-container {
   grid-area: logo;
-  font-size: 20px;
+  font-size: 30px;
   padding: 10px;
+  color: #000;
 }
-header > div #burger-container {
+#burger-header > div #burger-container {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -567,17 +576,17 @@ header > div #burger-container {
   position: relative;
 }
 @media (min-width: 1024px) {
-  header > div #burger-container {
+  #burger-header > div #burger-container {
     display: none !important;
   }
 }
-header > div #burger-container #burger {
+#burger-header > div #burger-container #burger {
   position: absolute;
   z-index: 1000;
   height: 40px;
   width: 40px;
 }
-header > div #burger-nav-container {
+#burger-header > div #burger-nav-container {
   background-color: #222222;
   grid-area: nav;
   position: fixed;
@@ -586,8 +595,8 @@ header > div #burger-nav-container {
   z-index: 500;
 }
 @media (min-width: 1024px) {
-  header > div #burger-nav-container {
-    background-color: #222222;
+  #burger-header > div #burger-nav-container {
+    background-color: #fff;
     position: static;
     height: 100%;
     width: 100%;
