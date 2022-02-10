@@ -247,6 +247,14 @@
       "oAP" : "\/dev\/content\/content.html",
       "oF" : 0
     },
+    "\/dev\/global\/burgerheader.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/global\/burgerheader.html",
+      "oF" : 0
+    },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -287,6 +295,17 @@
       "oAP" : "\/deploy\/index.html",
       "oF" : 2
     },
+    "\/dev\/js\/burgerAnimation.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/burgerAnimation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/checkScroll.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -309,6 +328,28 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/dev\/js\/mobileMenu.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/mobileMenu-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/mobileResizing.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/mobileResizing-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
     "\/dev\/js\/navigation.js" : {
       "bF" : 0,
       "ft" : 64,
@@ -316,6 +357,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/navigation-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/pageScroll.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/pageScroll-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
@@ -371,6 +423,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/base\/_typography.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/components\/_burgernavigation.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/components\/_burgernavigation.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -446,6 +513,21 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/helpers\/_variables.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/layout\/_burgerheader.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/layout\/_burgerheader.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
